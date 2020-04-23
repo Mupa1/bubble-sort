@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# rubocop:disable Metrics/MethodLength
 def bubble_sort(array)
   n = array.length - 1
   array.each do
@@ -14,7 +17,8 @@ def bubble_sort(array)
   array
 end
 
-def bubble_sort_2(array)
+# rubocop:disable Metrics/AbcSize
+def bubble_sort_by(array)
   n = array.length - 1
   array.each do
     swapped_number = false
@@ -29,8 +33,9 @@ def bubble_sort_2(array)
   end
   array
 end
+# rubocop:enable Metrics/MethodLength, Metrics/AbcSize
 
-bubble = bubble_sort_2(%w[one two three four]) do |a, b|
+bubble = bubble_sort_by(%w[one two three four]) do |a, b|
   a.length - b.length
 end
 

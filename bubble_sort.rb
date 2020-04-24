@@ -34,9 +34,3 @@ def bubble_sort_by(array)
   array
 end
 # rubocop:enable Metrics/MethodLength, Metrics/AbcSize
-
-bubble = bubble_sort_by(%w[one two three four]) do |a, b|
-  a.length - b.length
-end
-
-print bubble

@@ -17,7 +17,6 @@ def bubble_sort(array)
   array
 end
 
-# rubocop:disable Metrics/AbcSize
 def bubble_sort_by(array)
   n = array.length - 1
   array.each do
@@ -33,4 +32,4 @@ def bubble_sort_by(array)
   end
   array
 end
-# rubocop:enable Metrics/MethodLength, Metrics/AbcSize
+# rubocop:enable Metrics/MethodLength
